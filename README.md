@@ -1,0 +1,32 @@
+#Visualing NYC Marathon 2016 Strava Data
+
+## Summary
+I’ve been an enthusiastic (if fairly slow) runner since I was in high school, and if there’s one thing us runners love, its our data. I have the privledge of winning the New York City Marathon's 2016 lottery, and so my husband and I took a trip to NYC last November, where I ran it in 4:31 - a PR!
+
+When you're training for a marathon, you spend far too much time looking at training plans, reading about the 80-20 rule, negative splits, nutrition, pace zones - and just as importantly, finding out what every other runner is up to! I was curious how my fellow racers trained and performed, and so, inspired by this excellent post by Colin Eberhart, I decided to try my first attempt at web scraping and analyze our race data.
+
+## Technical Stack
+* HTML
+* CSS - Skeleton Boilerplate, adapted
+* Javascript
+* jQuery
+* Python - data scraping/Chrome
+* Chart.js
+
+## APIs Used
+Strava API
+
+
+## Main Highlights
+
+#### Comparing finishing times
+Compares the finishing times of all NYC finishers against their gender, age, nationality and longest training run (assuming 17 weeks prior to the marathon was their training cycle).
+
+
+## Favorite Challenges
+* Web Scraping - This was my first time grabbing data and scraping for it. It was really fun to figure out how.
+* Writing the functions needed to render complex charts for Chart.js
+
+## About the Developer
+
+Keeley Hammond is a software developer living in Portland, OR. She really likes to run, and likes looking through her Garmin and Strava data even more.
