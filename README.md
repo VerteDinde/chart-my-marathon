@@ -13,10 +13,6 @@ When you're training for a marathon, you spend far too much time looking at trai
 * Python - data scraping/Chrome
 * Chart.js
 
-## APIs Used
-Strava API
-
-
 ## Main Highlights
 
 #### Comparing finishing times
@@ -27,6 +23,10 @@ Compares the finishing times of all NYC finishers against their gender, age, nat
 * Web Scraping - This was my first time grabbing data and scraping for it. It was really fun to figure out how.
 * Writing the functions needed to render complex charts for Chart.js
 
-## About the Developer
+## Special Thanks
+* Colin Eberhart, for the inspiration and great blog post about the London Marathon: http://blog.scottlogic.com/2017/02/28/london-marathon-training-visualisation.html 
+* Ionica Bizau, for this handy Node.js web scraper: https://github.com/IonicaBizau/scrape-it
+* Amy Chen, for the help and guidance
 
+## About the Developer
 Keeley Hammond is a software developer living in Portland, OR. She really likes to run, and likes looking through her Garmin and Strava data even more.
