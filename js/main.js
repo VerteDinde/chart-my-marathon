@@ -15,18 +15,29 @@ function Runner(data) {
 }
 
 // populate a table for now with my sample three runners
-Runner.prototype.toHtml() = function() {
-  var $newRunner = $('article');
-  $('#runners tr').not(':first').not(':last').remove();
+Runner.prototype.toHtml = function() {
+  $('#runners-table tr').not(':first').not(':last').remove();
   var html = '';
-  for (var i = 0; i < data.length; i++)
-    html += '<tr><td>' + data[i].FirstName +
-      '</td><td>' + data[i].Age + '</td></tr>';
-  $('#thetable tr').first().after(html);
-}
+  for (var i = 0; i < runners.length; i++)
+    html +=
+      '<tr><td>' + runners[i].athleteName +
+      '</td><td>' + runners[i].athleteRank +
+      '</td><td>' + runners[i].athleteGender +
+      '</td><td>' + runners[i].athleteAge +
+      '</td><td>' + runners[i].finishTime +
+      '</td><td>' + runners[i].finishPace + '</td></tr>';
+  $('#runners-table tr').first().after(html);
+};
+
+console.log(data);
+data.sort(function(a, b) {
+  return (a.athleteRank) - (b.athleteRank);
+});
+console.log(data);
 
 data.forEach(function(i) {
   runners.push(new Runner(i));
+  console.log(runners);
 });
 
 runners.forEach(function(runner) {

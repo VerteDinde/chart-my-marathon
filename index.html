@@ -9,21 +9,14 @@
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="icon" type="image/ico" href="images/runner.ico">
 </head>
 <body>
-  <header>
-    <h5>Chart My Marathon</h5>
-    <h6>A summary of NYC 2016 Marathon Data</h6>
-    <ul>
-      <li>Project Summary</li>
-      <li>About Keeley</li>
-      <li>GitHub</li>
-    </ul>
-  </header>
+  <header></header>
   <div class="container">
     <div class="row">
-      <h2>Basic Page</h2>
+      <h2>Visualing the 2016 NYC Marathon</h2>
       <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content!
         If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
       <h4>01: Getting the Data</h4>
@@ -35,7 +28,7 @@
       <p>The finishing times for each runner are broken down here:</p>
       <div class="one-half column" style="margin-top: 25%">
         <div id="runners"></div>
-        <table class="u-full-width" id="runners">
+        <table class="u-full-width" id="runners-table">
         <thead>
           <tr>
             <th>Name</th>
@@ -47,7 +40,14 @@
           </tr>
         </thead>
         <tbody>
-          <tr></tr>
+          <tr class="template">
+            <td>Averages:</td>
+            <td></td>
+            <td>Age</td>
+            <td>%M/%F</td>
+            <td>Finishing Time</td>
+            <td>Finishing Pace</td>
+          </tr>
         </tbody>
         </table>
       </div>
