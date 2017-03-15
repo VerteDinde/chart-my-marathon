@@ -1,7 +1,7 @@
-#Visualing NYC Marathon 2016 Strava Data
+# Visualing NYC Marathon 2016 Strava Data
 
 ## Summary
-I’ve been an enthusiastic (if fairly slow) runner since I was in high school, and if there’s one thing us runners love, its our data. I have the privledge of winning the New York City Marathon's 2016 lottery, and so my husband and I took a trip to NYC last November, where I ran it in 4:31 - a PR!
+I’ve been an enthusiastic (if slow) runner since I was in high school. If there’s one thing we runners love, its our data. I have the privledge of being chosen for the New York City Marathon's 2016 lottery last year, so my husband and I took a trip to NYC last November. Going to NYC was a blast, and I finished the race 4:31 - that is, 4 hours and 31 minutes. A PR for me!
 
 When you're training for a marathon, you spend far too much time looking at training plans, reading about the 80-20 rule, negative splits, nutrition, pace zones - and just as importantly, finding out what every other runner is up to! I was curious how my fellow racers trained and performed, and so, inspired by this excellent post by Colin Eberhart, I decided to try my first attempt at web scraping and analyze our race data.
 
