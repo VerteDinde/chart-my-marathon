@@ -10,7 +10,7 @@ When you're training for a marathon, you spend far too much time looking at trai
 * CSS - Skeleton Boilerplate, adapted
 * Javascript
 * jQuery
-* Python - data scraping/Chrome
+* Node - data scraper
 * Chart.js
 
 ## Main Highlights

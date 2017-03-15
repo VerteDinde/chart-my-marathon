@@ -22,8 +22,8 @@ Runner.prototype.toHtml = function() {
     html +=
       '<tr><td>' + runners[i].athleteName +
       '</td><td>' + runners[i].athleteRank +
-      '</td><td>' + runners[i].athleteGender +
       '</td><td>' + runners[i].athleteAge +
+      '</td><td>' + runners[i].athleteGender +
       '</td><td>' + runners[i].finishTime +
       '</td><td>' + runners[i].finishPace + '</td></tr>';
   $('#runners-table tr').first().after(html);
