@@ -37,6 +37,7 @@ scrapeIt("https://www.strava.com/running-races/2016-tcs-nyc-marathon#_=_", {
           return parseInt(age);
         }
       },
+      //pacePerMile: "td."
     }
   }
 

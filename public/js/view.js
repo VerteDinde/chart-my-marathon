@@ -11,23 +11,16 @@ function createGenderChart() {
     type: 'doughnut',
     data: {
       labels: [
-        "Red",
-        "Blue",
-        "Yellow"
+        "Female",
+        "Male",
       ],
       datasets: [
         {
-          data: [300, 50, 100],
+          data: [60, 20],
           backgroundColor: [
-            "#FF6384",
-            "#36A2EB",
-            "#FFCE56"
+            "#FFCE56",
+            "#36A2EB"
           ],
-          hoverBackgroundColor: [
-            "#FF6384",
-            "#36A2EB",
-            "#FFCE56"
-          ]
         }]
     },
     options: {
@@ -46,12 +39,12 @@ function createFinishTimeChart() {
     data: {
       datasets: [
         {
-          label: 'First Dataset',
+          label: 'Average Run',
           data: [
             {
               x: 20,
               y: 30,
-              r: 15
+              r: 30
             },
             {
               x: 40,
@@ -61,6 +54,23 @@ function createFinishTimeChart() {
           ],
           backgroundColor: "#FF6384",
           hoverBackgroundColor: "#FF6384",
+        },
+        {
+          label: 'My Run',
+          data: [
+            {
+              x: 30,
+              y: 25,
+              r: 60
+            },
+            {
+              x: 26,
+              y: 15,
+              r: 5
+            }
+          ],
+          backgroundColor: "#FFCE56",
+          hoverBackgroundColor: "#FFCE56",
         }]
     },
     options: {
