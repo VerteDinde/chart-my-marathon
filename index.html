@@ -35,7 +35,6 @@
       <h4>02: Average Finishing Times</h4>
       <p>The finishing times for each runner are broken down here:</p>
       <div class="one-half column">
-        <div id="runners"></div>
         <table class="u-full-width" id="runners-table">
         <thead>
           <tr>
@@ -59,13 +58,25 @@
         </tbody>
         </table>
       </div>
-      <canvas id="gender-ratio" width="400" height="400"></canvas>
     </div>
+      <div class="row">
+      <h4>Gender and age breakdown of runners</h4>
+      <canvas id="gender-ratio"></canvas>
+      </div>
+      <div class="row">
+      <h4>Finishing times of all runners</h4>
+      <canvas id="finish-times"></canvas>
+      </div>
+      <div class="row">
+      <h4>Average paces</h4>
+      <canvas id="pace-times"></canvas>
+      </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/view.js"></script>
 </body>
 </html>
