@@ -3,6 +3,22 @@
 createGenderChart();
 createFinishTimeChart();
 createPaceTimeChart();
+function createGenderChartData() {
+  var initialValue = {
+    femaleCount: 0,
+    maleCount: 0
+  };
+  var genderResults = data.reduce(function(acc, curr) {
+   if (curr.athleteGender === 'F') {
+     acc.femaleCount += 1;
+   } else if (curr.athleteGender === 'M') {
+     acc.maleCount += 1;
+   }
+   return acc;
+  }, initialValue);
+
+  return [genderResults.femaleCount, genderResults.maleCount];
+}
 
 //Donut Chart: Gender
 function createGenderChart() {
@@ -16,7 +32,7 @@ function createGenderChart() {
       ],
       datasets: [
         {
-          data: [60, 20],
+          data: createGenderChartData(),
           backgroundColor: [
             "#FFCE56",
             "#36A2EB"
