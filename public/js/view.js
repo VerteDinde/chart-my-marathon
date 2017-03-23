@@ -6,13 +6,13 @@ function genderChartData() {
     femaleCount: 0,
     maleCount: 0
   };
-  var genderResults = data.reduce(function(acc, curr) {
-   if (curr.athleteGender === 'F') {
-     acc.femaleCount += 1;
-   } else if (curr.athleteGender === 'M') {
-     acc.maleCount += 1;
-   }
-   return acc;
+  var genderResults = data.reduce(function (acc, curr) {
+    if (curr.athleteGender === 'F') {
+      acc.femaleCount += 1;
+    } else if (curr.athleteGender === 'M') {
+      acc.maleCount += 1;
+    }
+    return acc;
   }, initialValue);
 
   return [genderResults.femaleCount, genderResults.maleCount];
@@ -20,7 +20,41 @@ function genderChartData() {
 
 // data for finish time chart
 function finishTimeData() {
-
+  var initialValue = {
+    twoHours: 0,
+    twoHours30: 0,
+    threeHours: 0,
+    threeHours30: 0,
+    fourHours: 0
+  };
+  debugger;
+  var finishTimes = data.reduce(function (acc, curr) {
+    if (curr.finishTimeInMinutes < 150) {
+      acc.twoHours += 1;
+    } else if (curr.finishTimeInMinutes < 180) {
+      acc.twoHours30 += 1;
+    } else if (curr.finishTimeInMinutes < 210) {
+      acc.threeHours += 1;
+    } else if (curr.finishTimeInMinutes < 240) {
+      acc.threeHours30 += 1;
+    } else if (curr.finishTimeInMinutes < 270) {
+      acc.fourHours += 1;
+    } else if (curr.finishTimeInMinutes < 300) {
+      acc.fourHours30 += 1;
+    } else if (curr.finishTimeInMinutes < 330) {
+      acc.fiveHours += 1;
+    } else if (curr.finishTimeInMinutes < 360) {
+      acc.fiveHours30 += 1;
+    } else if (curr.finishTimeInMinutes < 390) {
+      acc.sixHours += 1;
+    }
+    return acc;
+  }, initialValue);
+  return [
+    finishTimes.twoHours, finishTimes.twoHours30, finishTimes.threeHours,
+    finishTimes.threeHours30, finishTimes.fourHours, finishTimes.fourHours30,
+    finishTimes.fiveHours, finishTimes.fiveHours30, finishTimes.sixHours
+  ];
 }
 
 // Init all charts
@@ -59,50 +93,38 @@ function createGenderChart() {
 function createFinishTimeChart() {
   var ctx = document.getElementById('finish-times');
   var myBubbleChart = new Chart(ctx, {
-    type: 'bubble',
+    type: 'bar',
     data: {
-      datasets: [
-        {
-          label: 'Average Run',
-          data: [
-            {
-              x: 20,
-              y: 30,
-              r: 30
-            },
-            {
-              x: 40,
-              y: 10,
-              r: 10
-            }
-          ],
-          backgroundColor: "#FF6384",
-          hoverBackgroundColor: "#FF6384",
-        },
-        {
-          label: 'My Run',
-          data: [
-            {
-              x: 30,
-              y: 25,
-              r: 60
-            },
-            {
-              x: 26,
-              y: 15,
-              r: 5
-            }
-          ],
-          backgroundColor: "#FFCE56",
-          hoverBackgroundColor: "#FFCE56",
-        }]
+      labels: ["2:00", "2:30", '3:00', '3:30', '4:00', '4:30', '5:00', '5:30'],
+      datasets: [{
+        label: '# of Votes',
+        data: finishTimeData(),
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+          'rgba(75, 192, 192, 0.2)',
+          'rgba(153, 102, 255, 0.2)',
+          'rgba(255, 159, 64, 0.2)'
+        ],
+        borderColor: [
+          'rgba(255,99,132,1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+          'rgba(255, 159, 64, 1)'
+        ],
+        borderWidth: 1
+      }]
     },
     options: {
-      elements: {
-        points: {
-          borderWidth: 1,
-          borderColor: 'rgb(0, 0, 0)'
-        }
+      scales: {
+        yAxes: [{
+          ticks: {
+            beginAtZero: true
+          }
+        }]
       }
     }
   });
