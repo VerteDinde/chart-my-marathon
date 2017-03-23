@@ -7,15 +7,18 @@ When you're training for a marathon, you spend far too much time looking at trai
 
 ## Technical Stack
 * HTML
-* CSS - Skeleton Boilerplate, adapted
-* Javascript
-* jQuery
-* Node - data scraper
+* CSS
+* Javascript & jQuery
+* Node (data scraper)
+* Heroku & HerokuDB (deployment and database)
 * Chart.js
 
 ## Main Highlights
 
 #### Comparing finishing times
+Compares the finishing times of all NYC finishers against their gender, age, nationality and longest training run (assuming 17 weeks prior to the marathon was their training cycle).
+
+#### Breaking down runner demographics
 Compares the finishing times of all NYC finishers against their gender, age, nationality and longest training run (assuming 17 weeks prior to the marathon was their training cycle).
 
 
@@ -24,9 +27,10 @@ Compares the finishing times of all NYC finishers against their gender, age, nat
 * Writing the functions needed to render complex charts for Chart.js
 
 ## Special Thanks
+* Amy Chen, for the help and guidance and basically making this a reality.
+* Morgan Fogarty, for the rubber-ducking.
 * Colin Eberhart, for the inspiration and great blog post about the London Marathon: http://blog.scottlogic.com/2017/02/28/london-marathon-training-visualisation.html 
 * Ionica Bizau, for this handy Node.js web scraper: https://github.com/IonicaBizau/scrape-it
-* Amy Chen, for the help and guidance
 
 ## About the Developer
 Keeley Hammond is a software developer living in Portland, OR. She really likes to run, and likes looking through her Garmin and Strava data even more.

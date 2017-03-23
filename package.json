@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/VerteDinde/chart-my-marathon#readme",
   "dependencies": {
+    "fs-promise": "^2.0.0",
     "scrape-it": "^3.3.0"
   }
 }
