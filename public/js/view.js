@@ -1,9 +1,7 @@
 'use strict';
-// Init all charts
-createGenderChart();
-createFinishTimeChart();
-createPaceTimeChart();
-function createGenderChartData() {
+
+// pulling data for gender chart
+function genderChartData() {
   var initialValue = {
     femaleCount: 0,
     maleCount: 0
@@ -20,6 +18,16 @@ function createGenderChartData() {
   return [genderResults.femaleCount, genderResults.maleCount];
 }
 
+// data for finish time chart
+function finishTimeData() {
+
+}
+
+// Init all charts
+createGenderChart();
+createFinishTimeChart();
+createPaceTimeChart();
+
 //Donut Chart: Gender
 function createGenderChart() {
   var ctx = document.getElementById('gender-ratio');
@@ -32,7 +40,7 @@ function createGenderChart() {
       ],
       datasets: [
         {
-          data: createGenderChartData(),
+          data: genderChartData(),
           backgroundColor: [
             "#FFCE56",
             "#36A2EB"
