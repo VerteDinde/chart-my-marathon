@@ -1,0 +1,23 @@
+{
+  "name": "chart-my-marathon",
+  "version": "1.0.0",
+  "description": "## Summary I’ve been an enthusiastic (if fairly slow) runner since I was in high school, and if there’s one thing us runners love, its our data. I have the privledge of winning the New York City Marathon's 2016 lottery, and so my husband and I took a trip to NYC last November, where I ran it in 4:31 - a PR!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VerteDinde/chart-my-marathon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VerteDinde/chart-my-marathon/issues"
+  },
+  "homepage": "https://github.com/VerteDinde/chart-my-marathon#readme",
+  "dependencies": {
+    "fs-promise": "^2.0.0",
+    "scrape-it": "^3.3.0"
+  }
+}
